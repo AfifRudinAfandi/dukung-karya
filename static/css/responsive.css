@@ -1,3 +1,37 @@
+
+@media (max-width: 360px) {
+    .dk-nav .nav-btn{
+        padding: 4px 14px;
+    }
+    .hero.home .wp-hero{
+        padding-top: 38px;
+        padding-bottom: 32px;
+    }
+    .hero.home .wp-hero .hero-desc {
+        font-size: 20px;
+        line-height: 29px;
+        max-width: 242px;
+        margin-bottom: 22px;
+    }
+    .hero.home .wp-hero .btn-hero {
+        font-size: 14px;
+        padding: 8px 28px;
+    }
+    .hero.home .promotion p {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 288px;
+    }
+    .info .wp-info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info .wp-info .info-icon {
+        max-width: 98px;
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+}
 @media (min-width: 576px) {
     .dk-container {
         max-width: 540px;

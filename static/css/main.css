@@ -33,15 +33,13 @@
     font-weight: normal;
     font-size: 14px;
     border-radius: 34px;
+    padding: 8px 24px;
 }
 .dk-nav .nav-btn:nth-child(1){
     background-color: #0092FF;
-    padding: 8px 24px;
     color: #FFFFFF;
-    margin-right: 8px;
 }
 .dk-nav .nav-btn:nth-last-child(1){
-    padding: 8px 12px;
     background-color: #FFFFFF;
     color: #003654;
 }
