@@ -1,0 +1,25 @@
+@media (min-width: 576px) {
+    .dk-container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .dk-container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 992px) {
+    .dk-container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 1200px) {
+    .dk-container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 1400px) {
+    .dk-container {
+        max-width: 540px;
+    }
+}
