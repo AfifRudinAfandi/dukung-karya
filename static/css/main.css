@@ -48,21 +48,36 @@ section.hero.home .wp-hero{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 58px;
-    padding-bottom: 32px;
+    padding-top: 54px;
+    padding-bottom: 54px;
     background: url("../images/hero-bg.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
     margin-bottom: 38px;
 }
+.hero.home .wp-hero .hero-image1{
+    position: absolute;
+    width: 62px;
+    left: 50%;
+    top: 50%;
+    transform: translate(calc(-50% - 160px), -34%);
+}
+.hero.home .wp-hero .hero-image2{
+    position: absolute;
+    width: 90px;
+    right: 50%;
+    top: 50%;
+    transform: translate(calc(50% + 168px), -58%);
+}
 .hero.home .wp-hero .hero-desc{
-    font-weight: normal;
+    font-weight: 300;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 28px;
     color: #003654;
     max-width: 280px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
     text-align: center;
 }
 .hero.home .wp-hero .hero-desc span{
@@ -74,7 +89,7 @@ section.hero.home .wp-hero{
     background-color: #FF9900;
     color: #FFFFFF;
     border-radius: 50px;
-    padding: 8px 32px;
+    padding: 8px 26px;
 }
 .hero.home .promotion{
     width: 100%;
@@ -119,22 +134,290 @@ section.info{
 }
 .info .wp-info .info-icon{
     width: 100%;
-    max-width: 128px;
-    margin-right: 20px;
+    max-width: 124px;
+    margin-right: 16px;
 }
 .info .wp-info .wp-desc h5{
+    font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 28px;
     color: #003654;
     max-width: 228px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 .info .wp-info .wp-desc p{
+    font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 348px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #003654;
+    max-width: 308px;
+    margin-bottom: 0;
+}
+section.payment-info{
+    padding: 48px 0px;
+}
+.payment-info .payment-title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #003654;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.payment-info .wp-payment-info{
+    width: 100%;
+    padding: 0px 54px;
+}
+.payment-info .wp-payment-info ul>*{
+    flex: 0 0 auto;
+    width: 25%;
+}
+.payment-info .wp-payment-info .payment-varian{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    color: #003654;
+    margin-bottom: 12px;
+}
+.payment-info .wp-payment-info .wp-payment-ic{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 16px;
+    column-gap: 20px;
+    padding-left: 0;
+    margin-bottom: 18px;
+}
+.payment-info .wp-payment-info .payment-logo{
+    object-fit: contain;
+}
+.payment-info .wp-payment-info .wp-qris{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 0px;
+    margin-bottom: 30px;
+}
+.payment-info .wp-payment-info .wp-qris-logo{
+    width: 114px;
+    object-fit: contain;
+    margin-right: 15px;
+    position: relative;
+}
+.payment-info .wp-payment-info .wp-qris-logo img{
+    width: 100%;
+}
+.payment-info .wp-payment-info .wp-qris-logo::after{
+    content: "";
+    height: 46px;
+    width: 3px;
+    border-radius: 5px;
+    background-color: #003654;
+    position: absolute;
+    right: -7.5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.payment-info .wp-payment-info .wp-qris-text p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
     color: #003654;
     margin-bottom: 0;
+}
+.payment-info .wp-payment-info .wd-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payment-info .wp-payment-info .wd-info p{
+    width: 100%;
+    max-width: 368px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #003654;
+    padding: 23px 25px;
+    background-color: rgba(255, 213, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 0;
+}
+section.guide{
+    margin-bottom: 78px;
+}
+section.guide h5{
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #003654;
+    margin-bottom: 15px;
+}
+section.guide ul{
+    padding: 30px 27px 30px 52px;
+    background-color: #FAFAFA;
+    border-radius: 15px;
+    margin-bottom: 0;
+}
+section.guide ul li::marker{
+    color: #003654;
+    font-size: 21px;
+}
+section.join-now{
+    padding-top: 28px;
+    padding-bottom: 12px;
+    margin-bottom: 38px;
+}
+section.join-now .wp-join{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    background: url("../images/hero-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: 38px;
+}
+section.join-now .wp-join .plane{
+    position: absolute;
+    width: 72px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.join-now .wp-join .dots{
+    position: absolute;
+    width: 244px;
+    top: 22px;
+    left: calc(50% - 23px);
+    transform: translateX(-50%);
+}
+section.join-now .wp-join p{
+    position: relative;
+    z-index: 20;
+    font-style: normal;
+    font-weight: normal;
+    max-width: 412px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 18px;
+    color: #003654;
+}
+section.join-now .wp-join p span{
+    font-weight: 500;
+    line-height: 38px;
+}
+.btn-join{
+    position: relative;
+    z-index: 20;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #FF9900;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 8px 26px;
+}
+section.cs{
+    padding-bottom: 48px;
+}
+section.cs .cs-title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #003654;
+    margin-bottom: 48px;
+}
+section.cs .cs-title span{
+    font-weight: 500;
+    line-height: 38px;
+}
+section.cs .wp-cs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+section.cs .wp-cs .cs-img{
+    width: 100%;
+    max-width: 152px;
+}
+section.cs .wp-cs .cs-btn{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 6px 28px;
+    background-color: #0092FF;
+    border-radius: 50px;
+    text-decoration: none;
+}
+footer.dk-footer{
+    background-color: #FAFAFA;
+    padding: 29px 32px;
+}
+footer.dk-footer ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 26px;
+}
+footer.dk-footer ul li .footer-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #002A41;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+footer.dk-footer p{
+    width: 100%;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #002A41;
+}
+footer.dk-footer ul li .footer-social{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 38%;
+    font-size: 20px;
+    color: #002A41;
 }
